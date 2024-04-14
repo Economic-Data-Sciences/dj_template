@@ -1,0 +1,35 @@
+services:
+    tmppy:
+      extra_hosts:
+        - "tmp_pgsql:172.250.50.5"
+      container_name: tmppy
+      image: ewalsh200/basepy:3.11.8
+      volumes: 
+        - ./:/app
+      ports:
+        - "8000:8000"
+      networks:
+        tmpnet:
+          ipv4_address: 172.250.50.3
+    tmp_pgsql:
+      container_name: tmp_pgsql
+      image: bitnami/postgresql:15-debian-11
+      ports:
+        - '5132:5432'
+      environment:
+        - "POSTGRESQL_USERNAME=eds_admin"
+        - "POSTGRESQL_PASSWORD=Sao4aiGedee4Ahhe"
+        - "POSTGRESQL_DATABASE=eds_ops"
+        - "POSTGRESQL_POSTGRES_PASSWORD=Jeech9ahieH3eeThCo0oet0O"
+      restart: unless-stopped
+      networks:
+        tmpnet:
+          ipv4_address: 172.250.50.5
+
+
+networks:
+  tmpnet:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.250.50.0/24
