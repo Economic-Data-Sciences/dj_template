@@ -1,8 +1,12 @@
 {% extends 'main.html' %}
 {% block content %}
-<div class="js-holder">
-  <div class="uk-container-medium">
-    <h1>Insert UI Here</h1>
+{% load static %}
+
+<div class="uk-container uk-container-xlarge">
+  <div id="jsHolder">
   </div>
 </div>
+
+<script src="public/compiled/example.js" type="text/javascript"></script>
+
 {% endblock %}

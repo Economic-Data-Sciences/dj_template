@@ -1,6 +1,10 @@
 # Project Specific
 pgdata_master/
-app/proj/node_modules/
+node_modules/
+app/proj/ui/styles/vendor/uikit-3.15.21
+app/proj/static/admin
+app/proj/static/rest_framework
+app/proj/ui/public/compiled
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,4 +1,16 @@
 services:
+    nginx:
+      image: ewalsh200/nginx:latest
+      container_name: nginx
+      extra_hosts:
+        - "tmppy:172.250.50.3"
+      volumes:
+        - ./app/proj/ui:/website
+      ports:
+        - "80:80"
+      networks:
+        tmpnet:
+         ipv4_address: 172.250.50.2
     tmppy:
       extra_hosts:
         - "tmp_pgsql:172.250.50.5"
