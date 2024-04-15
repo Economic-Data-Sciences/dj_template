@@ -13,3 +13,8 @@ docker compose up
 
 # connect to docker environment
 docker exec -it tmppy bash
+
+# install node via nvm
+nvm install v20.12.2
+npm install from proj directory
+chown -R 1001:1001 app/proj/node_modules/
