@@ -18,11 +18,14 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path
 from exp_app.views import Index
-from exp_app.api_views import example
+from exp_app.api_views import example, StreamGeneratorView, get_metrics, get_latest
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("", Index.as_view()),
-    path("api/example", example)
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path("api/example", example),
+    path("api/stream", StreamGeneratorView.as_view(), name="stream-generator"),
+    path("api/get-metrics", get_metrics),
+    path("api/get-latest", get_latest)
+]
