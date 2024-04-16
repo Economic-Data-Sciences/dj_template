@@ -11,6 +11,8 @@ This project streams random data with three potential states:
 
 Our goal is to build a simple dashboard which shows the current state, and also explains a little bit about our data.
 
+This project is about more than just your skills, it is also about collaboration. So if some issues seem difficult and you have questions, please feel free to reach out and collaborate! It will also be important to comment within the code to make it easier to read and follow.
+
 ## The Task
 We need to create a simple dashboard we should create:
 1. A navbar
