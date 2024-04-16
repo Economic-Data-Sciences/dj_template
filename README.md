@@ -14,7 +14,7 @@ Our goal is to build a simple dashboard which shows the current state, and also 
 This project is about more than just your skills, it is also about collaboration. So if some issues seem difficult and you have questions, please feel free to reach out and collaborate! It will also be important to comment within the code to make it easier to read and follow.
 
 ## The Task
-We need to create a simple dashboard we should create:
+We need to create a simple dashboard, reacting to our streaming data in real-time. We should create:
 1. A navbar
   - Our task is to do some simple styling here.
   - File location app/proj/exp_app/templates/layout/nav.html
