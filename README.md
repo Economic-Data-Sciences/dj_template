@@ -46,7 +46,7 @@ This project setup has several steps because it relies on several components. If
 
 1. Clone the project
   - `git clone git@github.com:Economic-Data-Sciences/dj_template`
-2. Activate the pythong virtual environment and setup IDE
+2. Activate the python virtual environment and setup IDE
   - `source bin/activate`
   - open the project with your favourite editor
 3. Start Docker
