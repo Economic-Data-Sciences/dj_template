@@ -64,6 +64,7 @@ This project setup has several steps because it relies on several components. If
   - open another terminal or powershell and go to the project root folder (not in the docker environment)
   - `mkdir app/proj/node_modules`
   - `mkdir app/proj/ui/public/compiled`
+  - `touch app/proj/package-lock.json`
     - windows equivalent is to create a folder in file explorer
   - `sudo chown -R 1001:1001 app/proj/node_modules/`
     - chown commands are not needed in windows
