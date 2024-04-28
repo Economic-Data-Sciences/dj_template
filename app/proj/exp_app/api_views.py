@@ -112,7 +112,7 @@ class StreamGeneratorView(APIView):
             )
             data_obj.save()
             data_s = StreamingVariableSerializer(data_obj)
-            yield data_s
+            yield data_s.data
 
     def get(self,request):
         data_s = self.gen_random_data()
